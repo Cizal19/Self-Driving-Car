@@ -22,10 +22,10 @@ class Sensor {
     let touches = [];
     for (let i = 0; i < roadBorders.length; i++) {
       const touch = getIntersection(
-        ray[0],
-        ray[1],
-        roadBorders[i][0],
-        roadBorders[i][1]
+        ray[0], // start point of ray
+        ray[1], // end point of ray
+        roadBorders[i][0], // start point of border
+        roadBorders[i][1] // end point of border
       );
       if (touch) {
         touches.push(touch);

@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Self-driving car - No libraries</title>
+  <title>Self-driving car</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+  <div id="infoDiv">
+    <h2>Self-driving Car</h2>
+    <h3>Instructions</h3>
+    <p>The goal is to train a car to navigate around the traffic.</p>
+    <p>Start with multiple cars to increase the chances of success.</p>
+    <p>Click 'Save' to store the best-performing car's neural network.</p>
+    <p>If the cars display similar behavior repeatedly, click 'Discard' to delete the network and restart the training
+      process.</p>
+  </div>
   <canvas id="carCanvas"></canvas>
   <div id="verticalButtons">
     <div>
@@ -16,7 +24,11 @@
     <button onclick="save()">Save</button>
     <button onclick="discard()">Discard</button>
   </div>
-  <canvas id="networkCanvas"></canvas>
+
+      
+
+        <canvas id="networkCanvas"></canvas>
+      </div>
   <script src="utils.js"></script>
   <script src="visualizer.js"></script>
   <script src="network.js"></script>

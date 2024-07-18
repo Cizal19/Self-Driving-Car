@@ -3,7 +3,7 @@ carCanvas.width = 200;
 carCanvas.height = window.innerHeight; // Set initial height
 
 const networkCanvas = document.getElementById("networkCanvas");
-networkCanvas.width = 300;
+networkCanvas.width = 400;
 networkCanvas.height = window.innerHeight; // Set initial height
 
 const carCtx = carCanvas.getContext("2d");
@@ -58,6 +58,10 @@ function startTraining() {
 
   // Start the animation
   animate();
+}
+
+function stopSimulation() {
+  cancelAnimationFrame(animationFrameId);
 }
 
 function save() {

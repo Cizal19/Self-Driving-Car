@@ -15,7 +15,6 @@
     <p>If the cars display similar behavior repeatedly, click 'Discard' to delete the network and restart the training
       process.</p>
   </div>
-  <canvas id="carCanvas"></canvas>
   <div id="verticalButtons">
     <div>
       <input type="number" id="carCountInput" placeholder="Enter number of cars" />
@@ -23,7 +22,10 @@
     </div>
     <button onclick="save()">Save</button>
     <button onclick="discard()">Discard</button>
+    <button onclick="stopSimulation()">Stop</button>
   </div>
+  <canvas id="carCanvas"></canvas>
+  
 
       
 

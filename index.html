@@ -6,11 +6,15 @@
 </head>
 
 <body>
+
   <canvas id="carCanvas"></canvas>
   <div id="verticalButtons">
+    <div>
+      <input type="number" id="carCountInput" placeholder="Enter number of cars" />
+      <button onclick="startTraining()">Start Training</button>
+    </div>
     <button onclick="save()">Save</button>
     <button onclick="discard()">Discard</button>
-
   </div>
   <canvas id="networkCanvas"></canvas>
   <script src="utils.js"></script>

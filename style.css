@@ -10,6 +10,7 @@ body {
 #verticalButtons{
   display: flex;
   flex-direction: column;
+  margin: 3px;
 }
 
 button {
